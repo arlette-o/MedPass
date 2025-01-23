@@ -1,0 +1,13 @@
+.shadow-toolbar {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.signin-button {
+  background-color: #0b6fb8;
+  border-radius: 15%;
+  max-height: 4vh;
+}
