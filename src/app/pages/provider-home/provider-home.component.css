@@ -1,0 +1,17 @@
+.container {
+  width: auto;
+  margin: 10px;
+  background: #eee;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-drawer {
+  height: 100%;
+}
+
+mat-drawer-content {
+  flex: 1;
+  overflow: auto;
+}
