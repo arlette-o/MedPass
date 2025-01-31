@@ -1,0 +1,17 @@
+<mat-list>
+  <h3 matSubheader>Tools</h3>
+  @for (tool of tools; track tool) {
+  <mat-list-item class="inline-item">
+    <mat-icon matListIcon>{{ tool.icon }}</mat-icon>
+    <div matListItemTitle>{{ tool.label }}</div>
+  </mat-list-item>
+  }
+  <mat-divider></mat-divider>
+  <h3 matSubheader>Tasks</h3>
+  @for(task of tasks; track task){
+  <mat-list-item class="inline-item">
+    <mat-icon matListIcon>{{ task.icon }}</mat-icon>
+    <div matListItemTitle>{{ task.label }}</div>
+  </mat-list-item>
+  }
+</mat-list>

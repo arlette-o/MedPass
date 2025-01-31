@@ -15,3 +15,8 @@ mat-drawer-content {
   flex: 1;
   overflow: auto;
 }
+
+span {
+  display: inline-flex;
+  align-items: "center";
+}

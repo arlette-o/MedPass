@@ -1,25 +1,12 @@
 <mat-drawer-container class="container">
-  <mat-drawer mode="side" opened
-    ><mat-list>
-      <h3 matSubheader>Folders</h3>
-      @for (folder of folders; track folder) {
-      <mat-list-item>
-        <mat-icon matListIcon>folder</mat-icon>
-        <h4 matListItemTitle>{{ folder }}</h4>
-      </mat-list-item>
-      }
-      <mat-divider></mat-divider>
-      <h3 matSubheader>Notes</h3>
-      @for (note of notes; track note) {
-      <mat-list-item>
-        <mat-icon matListIcon>note</mat-icon>
-        <h4 matListItemTitle>{{ note }}</h4>
-      </mat-list-item>
-      }
-    </mat-list></mat-drawer
-  >
+  <mat-drawer mode="side" opened>
+    <app-provider-menu></app-provider-menu>
+  </mat-drawer>
   <mat-drawer-content class="container">
-    <h1>Patients</h1>
+    <span class="inline">
+      <h1>Patients</h1>
+      <app-provider-info></app-provider-info>
+    </span>
     <app-patients-table></app-patients-table>
   </mat-drawer-content>
 </mat-drawer-container>
